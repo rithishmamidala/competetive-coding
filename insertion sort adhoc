@@ -17,6 +17,7 @@ Output Format
 
 For each test case, print the index at which the ith element gets inserted [i>=1], separated by space. Separate the output of different tests by newline.
 
+
 Sample Input 0
 4
 8
