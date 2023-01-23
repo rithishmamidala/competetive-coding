@@ -1,0 +1,50 @@
+# competetive-coding
+# Find First Repeating Character - Variation
+Given a string of characters, find the first repeating character.
+
+Input Format
+
+First line of input contains T - number of test cases. Its followed by T lines, each line contains a single string of characters.
+
+Constraints
+
+1 <= T <= 1000
+'a' <= str[i] <= 'z'
+1 <= len(str) <= 104
+
+Output Format
+
+For each test case, print the first repeating character, separated by newline. If there are none, print '.'.
+
+Sample Input 0
+
+4
+datastructures
+algorithms
+smartinterviews
+hackerrank
+Sample Output 0
+
+a
+.
+t
+r
+
+Code:
+
+from collections import defaultdict
+for _ in range(int(input())):
+    s = input()
+    l = [*s]
+    c = 1 
+    md = defaultdict(lambda : 0)
+    for i in range(len(l)):
+        if(md[l[i]]==0):
+            md[l[i]] += 1
+        else:
+            c=0
+            print(l[i])
+            break
+    if c ==1:
+        print(".")
+        
