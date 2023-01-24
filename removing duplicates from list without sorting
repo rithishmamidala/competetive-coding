@@ -1,0 +1,22 @@
+# competetive-coding
+# removing duplicates from list without sorting
+# code 
+# from collections import Counter
+# Python 3 code to demonstrate
+# removing duplicated from list
+# using Counter() method
+
+# initializing list
+arr = [1, 5, 3, 6, 3, 5, 6, 1]
+print ('The original list is : '+ str(arr))
+
+# using Counter() + keys()
+# to remove duplicated
+# from list
+temp = Counter(arr)
+res = [*temp]
+
+# printing list after removal
+# of duplicate
+print('The list after removing duplicates :'
+		,res)
